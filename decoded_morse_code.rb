@@ -40,3 +40,14 @@ def decode_word(word)
   @result
 end
 puts decode_word('-- -.--')
+
+# decoding an entire message
+def decode(message)
+  @sentence = message.split('   ')
+  @decoded_sentence = ''
+  @sentence.each do |n|
+    @decoded_sentence += "#{decode_word(n)} "
+  end
+  @decoded_sentence.strip
+end
+puts decode('-- -.--   -. .- -- .')
