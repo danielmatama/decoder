@@ -32,7 +32,7 @@ def decode_char(char)
   @container[char]
 end
 
-puts decode_char('.-');
+puts decode_char('.-')
 
 def decode_word(word)
   @result = ''
